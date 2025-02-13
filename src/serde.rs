@@ -79,8 +79,9 @@ where
 
 #[allow(unused_results)]
 #[cfg(all(test, feature = "std"))]
+#[cfg_attr(coverage_nightly, coverage(off))]
 mod test {
-  use coverage_helper::test;
+
   use serde_test::{assert_de_tokens_error, assert_tokens, Token};
 
   use super::*;

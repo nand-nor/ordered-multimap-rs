@@ -3524,8 +3524,8 @@ where
 
 #[allow(unused_results)]
 #[cfg(all(test, feature = "std"))]
+#[cfg_attr(coverage_nightly, coverage(off))]
 mod test {
-  use coverage_helper::test;
 
   use super::*;
 
@@ -5361,7 +5361,7 @@ mod test {
   #[test]
   fn test_dummy_hasher_finish() {
     let hasher = DummyHasher;
-    hasher.finish();
+    let _ = hasher.finish();
   }
 
   #[should_panic]

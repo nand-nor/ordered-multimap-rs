@@ -7,6 +7,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+### Changed
+
+ - Updated `hashbrown` dependency to `0.15.2`.
+ - Removed `coverage-helper` dependency
+ - Addressed clippy warnings regarding `#[coverage(...)]` attribute
+
 # 0.7.1 - 10-24-2023
 
 ### Changed
